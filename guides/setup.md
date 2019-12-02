@@ -4,7 +4,7 @@ Like in every hands-on workshop this part can be arsh and different for everyone
 
 ## STM32CubeIDE
 
-Based on [Eclipse](https://www.eclipse.org/) This software let's you program the STM32 and help you with some initial and otherwise repetitive configurations. You can for example graphically set inputs and outputs or turn on SPI and the initialization code is generated automatically.
+Based on [Eclipse](https://www.eclipse.org/) this software let's you program the STM32 and help you with some initial and otherwise repetitive configurations. You can for example graphically set inputs and outputs or turn on SPI and the initialization code is generated automatically.
 
 ![STM32CubeIDE](figs/stm32cubeide.png)
 
