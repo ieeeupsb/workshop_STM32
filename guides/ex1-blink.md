@@ -91,6 +91,6 @@ Even a simple IO pin has some configurations to be done. It can be seen that the
 
 Here it comes the part we've all waiting for, let's make the LED blink! Search for the `while (1)` instruction and then use the same function present in the initialization routine to blink the LED. Be sure to put your code between **BEGIN** and **END** statements otherwise it will be thrown away later on.
 
-Tip: You can use the `HAL_Delay(uint32_t Delay)` function to wait for a given time in milliseconds.
+**Tip:** You can use the `HAL_Delay(uint32_t Delay)` function to wait for a given time in milliseconds.
 
 [Main Menu](../README.md)
