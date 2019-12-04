@@ -24,7 +24,7 @@ Now, do you know what PWM is? Well it consists in using a timer that counts time
 
 Since this pattern repeats itself at high frequencies, it can rougly act as a analog signal so we can use it to supply the LED with various voltage levels between 0V and 3.3V.
 
-For this you'll have to configure the Timer 1 Channel 1 in PWM Generation mode in order to configure **PA8** as the output PWM pin. And configure the timer period, this is a 16 bit timer so you can set a number between 0 and 65535 (2^16). In this case the period will dictate your resolution, for example, if you set 4 for the period, you will only get 5 possible duty-cycles 0%, 25%, 50%, 75%, 100% and this will not make the LED fade smoothly.
+For this you'll have to configure the Timer 1 Channel 1 in PWM Generation mode in order to configure **PA8** as the output PWM pin. Don't forget to configure the timer period, this is a 16 bit timer so you can set a number between 0 and 65535 (2^16). In this case the period will dictate your resolution, for example, if you set 4 for the period, you will only get 5 possible duty-cycles 0%, 25%, 50%, 75%, 100% and this will not make the LED fade smoothly.
 
 Now go to the code and figure out how can you make the LED fade ON and OFF.
 
