@@ -49,7 +49,9 @@ Then on the left open the main.c file that can be found at:
 
 ![Main file](figs/code_main.png)
 
-Whoaaa! There's a lot going on here already! Yes, STM32CubeMX, the tool you selected the pin as output, generates (the boring to write) code for you. Because of that you need to be careful where to write your own code since there are chucks of code that belong to STM32CubeMX and those chunks are overwrited every time you change anything in STM32CubeMX. This means you have be be extra careful to always write your code between **BEGIN** and **END** comment statements. If you do that your code will stay safe. Here it is an excerpt of code that has two bounding boxes for you to write code. Each one has different titles, for different ends.
+Whoaaa! There's a lot going on here already! Yes, STM32CubeMX, the tool you selected the pin as output, generates (the boring to write) code for you. Because of that you need to be careful where to write your own code since there are chucks of code that belong to STM32CubeMX and those chunks are overwrited every time you change anything in STM32CubeMX. This means you have be be extra careful to always write your code between **BEGIN** and **END** comment statements. If you do that your code will stay safe.
+
+ Here it is an excerpt of code that has two bounding boxes for you to write code. Each one has different titles, for different ends.
 
 ~~~~c
 #include "main.h"
@@ -88,6 +90,8 @@ static void MX_GPIO_Init(void)
 }
 ~~~~
 Even a simple IO pin has some configurations to be done. It can be seen that the default state for the LED is OFF because its state was set to _GPIO_PIN_RESET_. Other interesting thing to note is that you can set an internal pull-up or pull-down by setting `GPIO_InitStruct.Pull` to _GPIO_PULLUP_ or _GPIO_PULLDOWN_. You can also configure the GPIO to be push-pull or an open-drain by setting `GPIO_InitStruct.Mode`.
+
+## Exercise Time :muscle:
 
 Here it comes the part we've all waiting for, let's make the LED blink! Search for the `while (1)` instruction and then use the same function present in the initialization routine to blink the LED. Be sure to put your code between **BEGIN** and **END** statements otherwise it will be thrown away later on.
 
