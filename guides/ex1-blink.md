@@ -1,7 +1,7 @@
 # Meet STM32CubeIDE
 ## Get it to blink
 
-If you have a software programming background you are used to do a **Hello World** code as your first program to test your setup. When it comes to hardware it's more common to make a LED blink. But remember... you are a free and independent human being so you get to choose the speed the LED should blink, but don't make it too fast, we want to seize the moment and be able to actually see it blink!
+If you have a software programming background you are used to do a **Hello World** code as your first program to test your setup. When it comes to hardware it's more common to make a LED blink.
 
 Let's go, open up STM32CubeIDE if you haven't already, and you should be greeted with the folllowing window:
 
@@ -32,7 +32,7 @@ If all went ok you will see this screen:
 ![IDE CubeMX](figs/ide_MX.png)
 
 This is were you do all the peripheral configurations, you can do it in the code but here you can see all the options check if your configurations are ok.
-Here you can for example turn an analog pin on and set its sampling time, for example, if you have two analog signals you can configure to sample the first signal 10 times per second and the second one 2 times per second. This lets you give priorities to the analog signals you have. Impressed?! This only scratches the surface of what you can do with this microcontroller!
+Here you can for example turn an analog pin on and set its sampling time, and if you have two analog signals you can configure to sample the first signal 10 times per second and the second one 2 times per second. This lets you give priorities to the analog signals you have. Impressed?!
 
 Now let's learn to walk before we can run. Let's try to make the LED already included in the STM32 blink.
 As you an see in the board the LED has the following marking **PC13** next to it.
@@ -49,7 +49,7 @@ Then on the left open the main.c file that can be found at:
 
 ![Main file](figs/code_main.png)
 
-Whoaaa! there's a lot going on here already! Yes, STM32CubeMX, the tool you selected the pin as output, generates (the boring to write) code for you and because of that you need to be careful were you write your own code because there is chucks of code that belong to STM32CubeMX and those chunks are overwrited each time you change anything in STM32CubeMX. This means you have be be extra careful to always write your code between **BEGIN** and **END** comment statements. If you do that your code will stay safe. Here it is an excerpt of code that has two bounding boxes for you to write code. Each one has different titles, for different ends.
+Whoaaa! There's a lot going on here already! Yes, STM32CubeMX, the tool you selected the pin as output, generates (the boring to write) code for you. Because of that you need to be careful where to write your own code since there are chucks of code that belong to STM32CubeMX and those chunks are overwrited every time you change anything in STM32CubeMX. This means you have be be extra careful to always write your code between **BEGIN** and **END** comment statements. If you do that your code will stay safe. Here it is an excerpt of code that has two bounding boxes for you to write code. Each one has different titles, for different ends.
 
 ~~~~c
 #include "main.h"
