@@ -1,13 +1,13 @@
 # Meet STM32CubeIDE
 ## Get it to blink
 
-If you have a software programming background you are used to do a "Hello World" code as your first program to test your setup. When it comes to hardware it's more common to make a LED blink. But remember... you are a free and independent human being so you get to choose the speed the LED should blink, but don't make it too fast, we want to seize the moment and be able to actually see it blink!
+If you have a software programming background you are used to do a **Hello World** code as your first program to test your setup. When it comes to hardware it's more common to make a LED blink. But remember... you are a free and independent human being so you get to choose the speed the LED should blink, but don't make it too fast, we want to seize the moment and be able to actually see it blink!
 
 Let's go, open up STM32CubeIDE if you haven't already, and you should be greeted with the folllowing window:
 
 ![IDE Workspace](figs/ide_workspace.png)
 
-This "workspace" is where your projects will be stored, you can see a workspace as a group of projects. For example, it is a good idea to have a workspace for all the projects of this workshop.
+This **workspace** is where your projects will be stored, you can see a workspace as a group of projects. For example, it is a good idea to have a workspace for all the projects of this workshop.
 
 Then the welcome page will show up:
 
@@ -17,13 +17,13 @@ Click on **Start new STM32 project** and you will be preseted with a powerfull t
 
 ![IDE MCU Chooser](figs/ide_mcu_chooser.png)
 
-You can filter by the number of pins you need, number of SPI, UART, a lot of other interfaces and hardware features. In this case we have already done this for you and we gave you a **STM32F103C8**. You can search for it on the search bar on the upper left and click "Next".
+You can filter by the number of pins you need, number of SPI, UART, a lot of other interfaces and hardware features. In this case we have already done this for you and we gave you a **STM32F103C8**. You can search for it on the search bar on the upper left and click **Next**.
 
-Then you can give the project a name and click "Finish".
+Then you can give the project a name and click **Finish**.
 
 ![IDE Project](figs/ide_project.png)
 
-It will ask you if you want to open STM32CubeMx perspective, it is recommended that you check "Remember my decision" and then click "Yes" to see the STM32F103C8 in all its glory.
+It will ask you if you want to open STM32CubeMx perspective, it is recommended that you check **Remember my decision** and then click **Yes** to see the STM32F103C8 in all its glory.
 
 ![IDE STM32CubeMX Perspective](figs/ide_mx_perspective.png)
 
@@ -43,7 +43,7 @@ This means it is connected to pin PC13 of the microcontroller, so you should set
 
 ![GPIO Output](figs/stm32_output.png)
 
-Then hit save and say "Yes" when you are propmted to generate code. Like before, we recommend checking "Remember my decision".
+Then hit save and say **Yes** when you are propmted to generate code. Like before, we recommend checking **Remember my decision**.
 
 Then on the left open the main.c file that can be found at:
 
@@ -91,6 +91,6 @@ Even a simple IO pin has some configurations to be done. It can be seen that the
 
 Here it comes the part we've all waiting for, let's make the LED blink! Search for the `while (1)` instruction and then use the same function present in the initialization routine to blink the LED. Be sure to put your code between **BEGIN** and **END** statements otherwise it will be thrown away later on.
 
-**Tip:** You can use the `HAL_Delay(uint32_t Delay)` function to wait for a given time in milliseconds.
+**Tip:** You can use the `HAL_Delay(uint32_t Delay)` function to wait for a given time in milliseconds. And use **CTRL + SPACE** to complete code.
 
-[Main Menu](../README.md)
+[Main Menu](../README.md) | [Next](ex2-pwm.md)

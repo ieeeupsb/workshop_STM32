@@ -5,3 +5,5 @@ Welcome to this ARM microcontroller workshop! This will be a hands-on approach t
 ## Introduction
 - [Setup Workspace](guides/setup.md)
 - [Meet STM32CubeIDE](guides/ex1-blink.md)
+## Peripherals
+- [Tick-Tack](guides/ex2-pwm.md)
