@@ -30,4 +30,4 @@ Now go to the code and figure out how you can make the LED fade ON and OFF.
 
 **Tip:** You can use `TIM1->CCR1` to set the dutty-cycle
 
-[Main Menu](../README.md)
+[Main Menu](../README.md) | [Next](ex2-adc.md)

@@ -1,5 +1,4 @@
 # Meet STM32CubeIDE
-## Get it to blink
 
 If you have a software programming background you are used to do a **Hello World** code as your first program to test your setup. When it comes to hardware it's more common to make a LED blink.
 
@@ -97,4 +96,4 @@ Here it comes the part we've all waiting for, let's make the LED blink! Search f
 
 **Tip:** You can use the `HAL_Delay(uint32_t Delay)` function to wait for a given time in milliseconds. And use **CTRL + SPACE** to complete code.
 
-[Main Menu](../README.md) | [Next](ex2-pwm.md)
+[Main Menu](../README.md) | [Next](ex1-timers.md)

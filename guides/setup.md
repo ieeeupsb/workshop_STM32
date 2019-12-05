@@ -10,4 +10,4 @@ Based on [Eclipse](https://www.eclipse.org/) this software let's you program the
 
 To install you can go to STMicroelectronics webpage by clicking [here](https://www.st.com/en/development-tools/stm32cubeide.html). Follow the installation steps, described [here](../docs/en.DM00603964.pdf) and if you have problems or doubts feel free to ask.
 
-[Main Menu](../README.md) | [Next](ex1-blink.md)
+[Main Menu](../README.md) | [Next](ide.md)
